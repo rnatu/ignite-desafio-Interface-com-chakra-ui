@@ -1,5 +1,5 @@
+/* eslint-disable import/prefer-default-export */
 import { extendTheme } from '@chakra-ui/react';
-
 
 export const theme = extendTheme({
   colors: {
@@ -24,7 +24,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'red',
+        bg: '#F5F8FA',
         color: 'gray.50',
       },
     },
