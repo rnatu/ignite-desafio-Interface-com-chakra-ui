@@ -1,4 +1,4 @@
-import { Divider } from '@chakra-ui/layout';
+import { Divider, Text } from '@chakra-ui/layout';
 import Head from 'next/head';
 
 import { Banner } from '../components/Banner';
@@ -26,6 +26,16 @@ export default function Home(): JSX.Element {
         borderWidth="1px"
         borderColor="#47585B"
       />
+
+      <Text
+        color="blueGray.700"
+        fontSize="2.25rem"
+        mt="3.25rem"
+        textAlign="center"
+      >
+        Vamos nessa? <br />
+        Então escolha seu continente
+      </Text>
 
       <main>
         <h1>Welcome to Next.js!</h1>
