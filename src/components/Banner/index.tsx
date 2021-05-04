@@ -16,12 +16,12 @@ export function Banner(): JSX.Element {
       >
         <Flex mt="5rem" px="8.75rem" justify="space-between">
           <Box color="gray.50" w="32.75rem">
-            <Text fontSize="2.25rem" fontWeight="500">
+            <Text fontSize={['lg', '4xl']} fontWeight="500">
               5 Continentes, <br />
               infinitas possibilidades.
             </Text>
 
-            <Text color="gray.100" fontSize="1.25rem" fontWeight="normal">
+            <Text color="gray.100" fontSize={['sm', 'xl']} fontWeight="normal">
               Chegou a hora de tirar do papel a viagem que você sempre sonhou.
             </Text>
           </Box>
