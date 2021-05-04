@@ -1,3 +1,4 @@
+import { Divider } from '@chakra-ui/layout';
 import Head from 'next/head';
 
 import { Banner } from '../components/Banner';
@@ -17,6 +18,14 @@ export default function Home(): JSX.Element {
       <Banner />
 
       <TravelTypes />
+
+      <Divider
+        mt="20"
+        mx="auto"
+        width="90px"
+        borderWidth="1px"
+        borderColor="#47585B"
+      />
 
       <main>
         <h1>Welcome to Next.js!</h1>

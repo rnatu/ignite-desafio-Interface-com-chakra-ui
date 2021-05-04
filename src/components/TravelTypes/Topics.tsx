@@ -9,8 +9,8 @@ interface TopicsProps extends FlexProps {
 export function Topics({ src, title, alt, ...rest }: TopicsProps): JSX.Element {
   return (
     <Flex direction="column" align="center" {...rest}>
-      <Image src={src} alt={alt} width="85px" />
-      <Text pt="24px">{title}</Text>
+      <Image src={src} alt={alt} width="5.31rem" />
+      <Text pt="6">{title}</Text>
     </Flex>
   );
 }
