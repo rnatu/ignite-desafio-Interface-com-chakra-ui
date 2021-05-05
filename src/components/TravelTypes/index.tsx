@@ -6,9 +6,10 @@ export function TravelTypes(): JSX.Element {
     <Flex
       color="blueGray.700"
       fontSize="2xl"
-      pt="5.05rem"
-      px="8.75rem"
+      mt="5.05rem"
+      mx="auto"
       justify="space-between"
+      maxWidth="1160px"
     >
       <Topics src="./cocktail.svg" title="vida noturna" alt="Drink" />
       <Topics src="./surf.svg" title="praia" alt="Praia" />
