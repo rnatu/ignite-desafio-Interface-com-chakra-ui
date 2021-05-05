@@ -10,6 +10,7 @@ export function TravelTypes(): JSX.Element {
       mx="auto"
       justify="space-between"
       maxWidth="1160px"
+      px="2rem"
     >
       <Topics src="./cocktail.svg" title="vida noturna" alt="Drink" />
       <Topics src="./surf.svg" title="praia" alt="Praia" />

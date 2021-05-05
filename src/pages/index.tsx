@@ -58,7 +58,7 @@ export default function Home(): JSX.Element {
           Então escolha seu continente
         </Text>
 
-        <Box mx="6.25rem" mb="2.5rem">
+        <Box mx="auto" mb="2.5rem" pt="3.25rem" px="2rem" maxWidth="1240px">
           <Swiper
             className="swiperContainer"
             cssMode
