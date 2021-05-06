@@ -28,6 +28,10 @@ export const theme = extendTheme({
     blueGray: {
       '700': '#47585B',
     },
+
+    yellow: {
+      '500': '#FFBA08',
+    },
   },
 
   fonts: {

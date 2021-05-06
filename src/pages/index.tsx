@@ -8,25 +8,23 @@ import { TravelTypes } from '../components/TravelTypes';
 
 export default function Home(): JSX.Element {
   return (
-    <div>
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <Header />
-      </header>
+      <Header />
 
       <main>
         <Banner />
 
-        <TravelTypes />
+        {/* <TravelTypes />
 
         <Divider
           mt="20"
           mx="auto"
-          width="90px"
+          width={['60px', '90px']}
           borderWidth="1px"
           borderColor="#47585B"
         />
@@ -41,8 +39,8 @@ export default function Home(): JSX.Element {
           Então escolha seu continente
         </Text>
 
-        <ContinentSlide />
+        <ContinentSlide /> */}
       </main>
-    </div>
+    </>
   );
 }
