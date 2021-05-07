@@ -1,7 +1,10 @@
 /* eslint-disable import/prefer-default-export */
-import { Flex, Grid, GridItem, Image } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Image, Link } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 
 export function Header(): JSX.Element {
+  const router = useRouter();
+
   return (
     <Flex
       as="header"
@@ -13,20 +16,24 @@ export function Header(): JSX.Element {
     >
       <Grid maxWidth="1160px" templateColumns="repeat(3, 1fr)" width="100%">
         <GridItem justifySelf="start" alignSelf="center">
-          <Image
-            h={['16px', '42px']}
-            src="/returnArrow.svg"
-            alt="botão de voltar"
-            justifySelf="center"
-            gridColumn="2"
-          />
+          {router.asPath === '/' || (
+            <Link>
+              <a href="/">
+                <Image
+                  h={['16px', '42px']}
+                  src="/returnArrow.svg"
+                  alt="botão de voltar"
+                  justifySelf="center"
+                />
+              </a>
+            </Link>
+          )}
         </GridItem>
         <GridItem justifySelf="center" alignSelf="center">
           <Image
             w={['81px', '184px']}
             src="/logo.svg"
             alt="Um avião voando sobre o nome da marca world trip"
-            gridColumn="2"
           />
         </GridItem>
         <GridItem align="center" justifySelf="end" alignSelf="center" />

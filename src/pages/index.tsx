@@ -30,7 +30,6 @@ export default function Home(): JSX.Element {
         />
 
         <Text
-          as="p"
           color="blueGray.700"
           fontSize={['1.25rem', '2.25rem']}
           fontWeight="500"

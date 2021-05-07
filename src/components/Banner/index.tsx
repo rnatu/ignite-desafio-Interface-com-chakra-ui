@@ -34,7 +34,7 @@ export function Banner(): JSX.Element {
               Chegou a hora de tirar do papel a viagem que você sempre sonhou.
             </Text>
           </Box>
-          {isWideVersion && <Image src="/airplane.svg" />}
+          {isWideVersion && <Image h="271px" src="/airplane.svg" />}
         </Flex>
       </Box>
     </Flex>

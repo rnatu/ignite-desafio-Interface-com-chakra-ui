@@ -36,7 +36,7 @@ export function Topics({ src, title, alt }: TopicsProps): JSX.Element {
           mr="2"
         />
       )}
-      <Text>{title}</Text>
+      <Text mt={{ md: '1.5rem' }}>{title}</Text>
     </Flex>
   );
 }

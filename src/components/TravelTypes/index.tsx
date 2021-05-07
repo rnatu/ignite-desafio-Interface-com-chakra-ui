@@ -17,7 +17,7 @@ export function TravelTypes(): JSX.Element {
       maxWidth="1160px"
       color="blueGray.700"
       fontSize={['1.12rem', '1.5rem']}
-      fontWeight="500"
+      fontWeight="600"
     >
       {!isWideVersion ? (
         <>
@@ -35,11 +35,11 @@ export function TravelTypes(): JSX.Element {
         </>
       ) : (
         <>
-          <Topics src="./cocktail.svg" title="vida noturna" alt="Drink" />
-          <Topics src="./surf.svg" title="praia" alt="Praia" />
-          <Topics src="./building.svg" title="moderno" alt="Moderno" />
-          <Topics src="./museum.svg" title="clássico" alt="Clássico" />
-          <Topics src="./earth.svg" title="e mais..." alt="Praia" />
+          <Topics src="/cocktail.svg" title="vida noturna" alt="Drink" />
+          <Topics src="/surf.svg" title="praia" alt="Praia" />
+          <Topics src="/building.svg" title="moderno" alt="Moderno" />
+          <Topics src="/museum.svg" title="clássico" alt="Clássico" />
+          <Topics src="/earth.svg" title="e mais..." alt="Praia" />
         </>
       )}
     </Flex>
