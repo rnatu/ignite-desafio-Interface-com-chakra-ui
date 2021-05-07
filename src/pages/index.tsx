@@ -21,15 +21,15 @@ export default function Home(): JSX.Element {
 
         <TravelTypes />
 
-        {/* <Divider
+        <Divider
           mt="20"
           mx="auto"
-          width={['60px', '90px']}
+          width={{ base: '60px', md: '90px' }}
           borderWidth="1px"
           borderColor="#47585B"
         />
 
-        <Text
+        {/* <Text
           color="blueGray.700"
           fontSize="2.25rem"
           mt="3.25rem"
