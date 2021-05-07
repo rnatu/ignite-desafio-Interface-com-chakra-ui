@@ -4,12 +4,12 @@ import { SwiperContainer } from './SwiperContainer';
 export function ContinentSlide(): JSX.Element {
   return (
     <Box
-      mx="auto"
-      mb={['1.5rem', '1.50rem', '2.25rem']}
-      pt={['1.25rem', '1.50rem', '2.25rem']}
-      px={['0', '1.50rem', '2.25rem']}
+      // mx="auto"
+      mb={['1.5rem', '2.25rem']}
+      mt={['1.25rem', '3.25rem']}
+      mx={['0', '1.50rem', 'auto']}
       maxWidth="1240px"
-      h={['15.62rem', '1.50rem', '2.25rem']}
+      h={['15.62rem', '28.12rem']}
     >
       <SwiperContainer />
     </Box>

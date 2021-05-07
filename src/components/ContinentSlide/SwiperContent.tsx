@@ -20,17 +20,17 @@ export function SwiperContent({
       backgroundSize="cover"
     >
       <Text
-        mt={['100px', '1.50rem', '2.25rem']}
+        mt={['100px', '200px']}
         color="gray.50"
-        fontSize={['1.5rem', '1.50rem', '2.25rem']}
+        fontSize={['1.5rem', '2rem', '3rem']}
         textAlign="center"
         fontWeight="700"
       >
         {continentTitle}
         <Text
-          color="gray.50"
-          mt={['5px', '1.50rem', '2.25rem']}
-          fontSize={['0.875rem', '1.50rem', '2.25rem']}
+          color="gray.100"
+          mt={['5px', '1']}
+          fontSize={['0.875rem', '1.3rem', '1.5rem']}
           textAlign="center"
           fontWeight="700"
         >

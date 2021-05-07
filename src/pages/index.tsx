@@ -22,9 +22,9 @@ export default function Home(): JSX.Element {
         <TravelTypes />
 
         <Divider
-          mt={['2.25rem', '1.50rem', '2.25rem']}
+          mt={['2.25rem', '3rem', '5rem']}
           mx="auto"
-          width={['60px', '75rem', '90px']}
+          width={['60px', '90px']}
           borderWidth="1px"
           borderColor="#47585B"
         />
@@ -32,9 +32,9 @@ export default function Home(): JSX.Element {
         <Text
           as="p"
           color="blueGray.700"
-          fontSize={['1.25rem', '1.50rem', '2.25rem']}
+          fontSize={['1.25rem', '2.25rem']}
           fontWeight="500"
-          mt={['1.5rem', '20rem', '5.04rem']}
+          mt={['1.5rem', '2.35rem']}
           textAlign="center"
         >
           Vamos nessa? <br />
