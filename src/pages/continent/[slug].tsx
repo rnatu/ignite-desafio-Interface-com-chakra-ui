@@ -1,6 +1,5 @@
 import Head from 'next/head';
 
-import { ContinentSlide } from '../../components/ContinentSlide';
 import { Header } from '../../components/Header';
 
 export default function Continent(): JSX.Element {
@@ -13,9 +12,7 @@ export default function Continent(): JSX.Element {
 
       <Header />
 
-      <main>
-        <ContinentSlide />
-      </main>
+      <main />
     </>
   );
 }

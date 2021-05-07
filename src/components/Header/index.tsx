@@ -17,15 +17,13 @@ export function Header(): JSX.Element {
       <Grid maxWidth="1160px" templateColumns="repeat(3, 1fr)" width="100%">
         <GridItem justifySelf="start" alignSelf="center">
           {router.asPath === '/' || (
-            <Link>
-              <a href="/">
-                <Image
-                  h={['16px', '42px']}
-                  src="/returnArrow.svg"
-                  alt="botão de voltar"
-                  justifySelf="center"
-                />
-              </a>
+            <Link as="a" href="/">
+              <Image
+                h={['16px', '42px']}
+                src="/returnArrow.svg"
+                alt="botão de voltar"
+                justifySelf="center"
+              />
             </Link>
           )}
         </GridItem>
