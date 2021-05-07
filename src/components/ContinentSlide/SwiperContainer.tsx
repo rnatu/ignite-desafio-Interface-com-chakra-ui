@@ -19,58 +19,56 @@ SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 export function SwiperContainer(): JSX.Element {
   return (
-    <>
-      <Swiper
-        className="swiperContainer"
-        cssMode
-        navigation
-        pagination
-        mousewheel
-        keyboard
-      >
-        <SwiperSlide className="swiperSlide">
-          <SwiperContent
-            bgimage="./europe.png"
-            continentTitle="Europa"
-            continentDescription="O continente mais antigo"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <SwiperContent
-            bgimage="./europe.png"
-            continentTitle="América do Norte"
-            continentDescription="teste"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <SwiperContent
-            bgimage="./europe.png"
-            continentTitle="América do Sul"
-            continentDescription="teste"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <SwiperContent
-            bgimage="./europe.png"
-            continentTitle="Ásia"
-            continentDescription="teste"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <SwiperContent
-            bgimage="./europe.png"
-            continentTitle="África"
-            continentDescription="teste"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiperSlide">
-          <SwiperContent
-            bgimage="./europe.png"
-            continentTitle="Oceania"
-            continentDescription="teste"
-          />
-        </SwiperSlide>
-      </Swiper>
-    </>
+    <Swiper
+      className="swiperContainer"
+      cssMode
+      navigation
+      pagination
+      mousewheel
+      keyboard
+    >
+      <SwiperSlide className="swiperSlide">
+        <SwiperContent
+          bgimage="./europe.png"
+          continentTitle="Europa"
+          continentDescription="O continente mais antigo"
+        />
+      </SwiperSlide>
+      <SwiperSlide className="swiperSlide">
+        <SwiperContent
+          bgimage="./europe.png"
+          continentTitle="América do Norte"
+          continentDescription="teste"
+        />
+      </SwiperSlide>
+      <SwiperSlide className="swiperSlide">
+        <SwiperContent
+          bgimage="./europe.png"
+          continentTitle="América do Sul"
+          continentDescription="teste"
+        />
+      </SwiperSlide>
+      <SwiperSlide className="swiperSlide">
+        <SwiperContent
+          bgimage="./europe.png"
+          continentTitle="Ásia"
+          continentDescription="teste"
+        />
+      </SwiperSlide>
+      <SwiperSlide className="swiperSlide">
+        <SwiperContent
+          bgimage="./europe.png"
+          continentTitle="África"
+          continentDescription="teste"
+        />
+      </SwiperSlide>
+      <SwiperSlide className="swiperSlide">
+        <SwiperContent
+          bgimage="./europe.png"
+          continentTitle="Oceania"
+          continentDescription="teste"
+        />
+      </SwiperSlide>
+    </Swiper>
   );
 }

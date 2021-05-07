@@ -13,23 +13,24 @@ export function SwiperContent({
 }: SwiperContentProps): JSX.Element {
   return (
     <Box
-      bgImage={`url(${bgimage})`}
+      bgImg={`url(${bgimage})`}
       width="100%"
       height="100%"
       bgPosition="center"
+      backgroundSize="cover"
     >
       <Text
-        mt="180px"
+        mt={['100px', '1.50rem', '2.25rem']}
         color="gray.50"
-        fontSize="3rem"
+        fontSize={['1.5rem', '1.50rem', '2.25rem']}
         textAlign="center"
         fontWeight="700"
       >
         {continentTitle}
         <Text
           color="gray.50"
-          mt="1rem"
-          fontSize="1.5rem"
+          mt={['5px', '1.50rem', '2.25rem']}
+          fontSize={['0.875rem', '1.50rem', '2.25rem']}
           textAlign="center"
           fontWeight="700"
         >

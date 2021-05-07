@@ -9,14 +9,14 @@ export function TravelTypes(): JSX.Element {
 
   return (
     <Flex
-      direction={{ base: 'column', md: 'row' }}
+      direction={['column', 'column', 'row']}
       justify={['center', 'space-between']}
-      mt={['2.25rem', '5.04rem']}
+      mt={['2.25rem', '20rem', '5.04rem']}
       mx="auto"
       width="80%"
       maxWidth="1160px"
       color="blueGray.700"
-      fontSize={['1.12rem', '2xl']}
+      fontSize={['1.12rem', '3.rem', '2xl']}
       fontWeight="500"
     >
       {!isWideVersion ? (

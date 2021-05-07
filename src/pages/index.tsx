@@ -22,24 +22,26 @@ export default function Home(): JSX.Element {
         <TravelTypes />
 
         <Divider
-          mt="20"
+          mt={['2.25rem', '1.50rem', '2.25rem']}
           mx="auto"
-          width={{ base: '60px', md: '90px' }}
+          width={['60px', '75rem', '90px']}
           borderWidth="1px"
           borderColor="#47585B"
         />
 
-        {/* <Text
+        <Text
+          as="p"
           color="blueGray.700"
-          fontSize="2.25rem"
-          mt="3.25rem"
+          fontSize={['1.25rem', '1.50rem', '2.25rem']}
+          fontWeight="500"
+          mt={['1.5rem', '20rem', '5.04rem']}
           textAlign="center"
         >
           Vamos nessa? <br />
           Então escolha seu continente
         </Text>
 
-        <ContinentSlide /> */}
+        <ContinentSlide />
       </main>
     </>
   );
