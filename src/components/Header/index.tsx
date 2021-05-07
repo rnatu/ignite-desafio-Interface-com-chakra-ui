@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import { Flex, Grid, Image } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Image } from '@chakra-ui/react';
 
 export function Header(): JSX.Element {
   return (
@@ -11,7 +11,7 @@ export function Header(): JSX.Element {
       p="1rem"
     >
       <Grid maxWidth="1160px" templateColumns="repeat(3, 1fr)" width="100%">
-        <Flex align="center" justify="flex-start">
+        <GridItem align="center" justifySelf="start">
           <Image
             h={['16px', '32px']}
             src="/returnArrow.svg"
@@ -19,8 +19,8 @@ export function Header(): JSX.Element {
             justifySelf="center"
             gridColumn="2"
           />
-        </Flex>
-        <Flex align="center" justify="center">
+        </GridItem>
+        <GridItem align="center" justifySelf="center">
           <Image
             w={['81px', '184px']}
             src="/logo.svg"
@@ -28,8 +28,8 @@ export function Header(): JSX.Element {
             justifySelf="center"
             gridColumn="2"
           />
-        </Flex>
-        <Flex align="center" justify="flex-end" />
+        </GridItem>
+        <GridItem align="center" justifySelf="end" />
       </Grid>
     </Flex>
   );
