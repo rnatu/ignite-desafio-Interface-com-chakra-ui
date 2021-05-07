@@ -19,9 +19,9 @@ export default function Home(): JSX.Element {
       <main>
         <Banner />
 
-        {/* <TravelTypes />
+        <TravelTypes />
 
-        <Divider
+        {/* <Divider
           mt="20"
           mx="auto"
           width={['60px', '90px']}

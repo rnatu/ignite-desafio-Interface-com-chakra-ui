@@ -16,16 +16,20 @@ interface TopicsProps extends FlexProps {
 export function Topics({ src, title, alt }: TopicsProps): JSX.Element {
   const isWideVersion = useBreakpointValue({
     base: false,
-    lg: true,
+    md: true,
   });
 
   return (
-    <Flex direction={{ base: 'row', lg: 'column' }} alignItems="center">
+    <Flex
+      direction={isWideVersion ? 'column' : 'row'}
+      alignItems="center"
+      justifyContent="center"
+    >
       {isWideVersion ? (
         <Image src={src} alt={alt} width="5.31rem" />
       ) : (
         <Box
-          border="8px"
+          border="4px"
           borderColor="yellow.500"
           borderStyle="solid"
           borderRadius="50%"

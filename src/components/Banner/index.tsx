@@ -7,7 +7,7 @@ export function Banner(): JSX.Element {
   });
 
   return (
-    <Flex h={['20rem', '23rem']}>
+    <Flex h={['10.18rem', '23rem']}>
       <Box
         bgImage="url(https://images.unsplash.com/photo-1495344517868-8ebaf0a2044a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1505&q=80)"
         width="100%"
@@ -15,7 +15,7 @@ export function Banner(): JSX.Element {
         height={['10.18rem', '20rem']}
       >
         <Flex
-          mt={['1.75rem', '5rem']}
+          mt={['1.75rem', '2.75rem', '5rem']}
           px={['1rem', '8.75rem']}
           justify="space-between"
         >
@@ -27,7 +27,7 @@ export function Banner(): JSX.Element {
 
             <Text
               color="gray.100"
-              fontSize={['sm', 'xl']}
+              fontSize={['sm', 'md', 'xl']}
               fontWeight="normal"
               pt="0.5rem"
             >
