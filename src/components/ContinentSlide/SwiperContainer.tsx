@@ -26,42 +26,42 @@ export function SwiperContainer(): JSX.Element {
     >
       <SwiperSlide>
         <SwiperContent
-          bgimage="/europe.png"
+          bgimage="/europeSlider.png"
           continentTitle="Europa"
           continentDescription="O continente mais antigo"
         />
       </SwiperSlide>
       <SwiperSlide>
         <SwiperContent
-          bgimage="/europe.png"
+          bgimage="/europeSlider.png"
           continentTitle="América do Norte"
           continentDescription="teste"
         />
       </SwiperSlide>
       <SwiperSlide>
         <SwiperContent
-          bgimage="/europe.png"
+          bgimage="/europeSlider.png"
           continentTitle="América do Sul"
           continentDescription="teste"
         />
       </SwiperSlide>
       <SwiperSlide>
         <SwiperContent
-          bgimage="/europe.png"
+          bgimage="/europeSlider.png"
           continentTitle="Ásia"
           continentDescription="teste"
         />
       </SwiperSlide>
       <SwiperSlide>
         <SwiperContent
-          bgimage="/europe.png"
+          bgimage="/europeSlider.png"
           continentTitle="África"
           continentDescription="teste"
         />
       </SwiperSlide>
       <SwiperSlide>
         <SwiperContent
-          bgimage="/europe.png"
+          bgimage="/europeSlider.png"
           continentTitle="Oceania"
           continentDescription="teste"
         />

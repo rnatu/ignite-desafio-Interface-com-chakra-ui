@@ -18,7 +18,6 @@ export function SwiperContent({
       height="100%"
       bgPosition="center"
       backgroundSize="cover"
-      justifyContent="center"
     >
       <Link
         as="a"
