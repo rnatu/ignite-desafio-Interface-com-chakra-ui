@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react';
+import { Box, Heading, Link, Text } from '@chakra-ui/react';
 
 interface SwiperContentProps {
   bgimage: string;

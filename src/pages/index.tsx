@@ -2,7 +2,7 @@ import { Divider, Text } from '@chakra-ui/layout';
 import Head from 'next/head';
 
 import { Banner } from '../components/Banner';
-import { ContinentSlide } from '../components/ContinentSlide';
+import { Slider } from '../components/Slider';
 import { Header } from '../components/Header';
 import { TravelTypes } from '../components/TravelTypes';
 
@@ -40,7 +40,7 @@ export default function Home(): JSX.Element {
           Então escolha seu continente
         </Text>
 
-        <ContinentSlide />
+        <Slider />
       </main>
     </>
   );

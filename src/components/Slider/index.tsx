@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import { SwiperContainer } from './SwiperContainer';
 
-export function ContinentSlide(): JSX.Element {
+export function Slider(): JSX.Element {
   return (
     <Box
       // mx="auto"
