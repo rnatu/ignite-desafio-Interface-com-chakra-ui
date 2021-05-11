@@ -10,7 +10,7 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Worldtrip | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

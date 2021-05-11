@@ -1,42 +1,32 @@
 import { Flex, Heading, Image, Text, Tooltip } from '@chakra-ui/react';
 
 interface InfoContentProps {
-  countries: number;
-  languages: number;
-  cities: number;
-  tooltipLabel: string;
+  amount: number;
+  description: string;
+  tooltipLabel?: string;
 }
 
 export function InfoContent({
-  countries,
-  languages,
-  cities,
+  amount,
   tooltipLabel,
+  description,
 }: InfoContentProps): JSX.Element {
   return (
-    <>
-      <Flex direction={['column', 'column', 'row']}>
-        <Heading color="yellow.500" fontWeight="600" fontSize="1.5rem">
-          {countries}
-        </Heading>
-        <Text color="blueGray.700" fontSize="1.125rem">
-          países
-        </Text>
-      </Flex>
-      <Flex direction={['column', 'column', 'row']}>
-        <Heading color="yellow.500" fontWeight="600" fontSize="1.5rem">
-          {languages}
-        </Heading>
-        <Text color="blueGray.700" fontSize="1.125rem">
-          línguas
-        </Text>
-      </Flex>
-      <Flex direction={['column', 'column', 'row']}>
-        <Heading color="yellow.500" fontWeight="600" fontSize="1.5rem">
-          {cities}
-        </Heading>
-        <Text color="blueGray.700" fontSize="1.125rem">
-          cidades +100
+    <Flex direction="column" alignItems={['left', 'center']}>
+      <Heading
+        color="yellow.500"
+        fontWeight="600"
+        fontSize={['1.5rem', '3rem']}
+      >
+        {amount}
+      </Heading>
+      <Text
+        color="blueGray.700"
+        fontSize={['1.125rem', '1.5rem']}
+        fontWeight={['400', '600']}
+      >
+        {description}
+        {tooltipLabel && (
           <Tooltip
             hasArrow
             label={tooltipLabel}
@@ -51,8 +41,8 @@ export function InfoContent({
               src="/infoIcon.svg"
             />
           </Tooltip>
-        </Text>
-      </Flex>
-    </>
+        )}
+      </Text>
+    </Flex>
   );
 }
