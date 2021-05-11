@@ -14,7 +14,7 @@ export function CityCard({
   flagSrc,
 }: CitiesCardProps): JSX.Element {
   return (
-    <Flex direction="column" borderTopRadius="2%" mt="20px" w="256px" h="279px">
+    <Flex direction="column" borderTopRadius="2%" mb="20px" w="256px" h="279px">
       <Image src={postImageSrc} />
 
       <Flex
@@ -24,10 +24,10 @@ export function CityCard({
         borderBottomRadius="2%"
       >
         <Grid
-          mt="18px"
-          mb="25px"
-          w="208px"
-          h="63px"
+          mt="1.12rem"
+          mb="1.56rem"
+          w="13rem"
+          h="3.93rem"
           mx="auto"
           templateRows="repeat(2, 1fr)"
           templateColumns="repeat(2, 1fr)"

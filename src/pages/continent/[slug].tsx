@@ -1,4 +1,4 @@
-import { Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
+import { Flex, Heading, SimpleGrid } from '@chakra-ui/react';
 import Head from 'next/head';
 import { CityCard } from '../../components/CityCard';
 import { ContinentBanner } from '../../components/ContinentBanner';
@@ -16,42 +16,23 @@ export default function Continent(): JSX.Element {
 
       <Header />
 
-      <ContinentBanner>Europa</ContinentBanner>
+      <ContinentBanner continentTitle="Europa" />
 
       <Flex
         as="main"
         direction="column"
         maxWidth="1160px"
         mx={['1rem', '1rem', '1rem', 'auto']}
+        px={[0, 0, '1rem', '1rem', 0]}
       >
-        <Flex
-          mt={['1.5rem', '5rem']}
-          direction={['column', 'column', 'row']}
-          alignItems={['normal', 'center']}
-          justifyContent={['center', 'center', 'space-between']}
-          width="100%"
-        >
-          <Flex maxWidth="600px">
-            <Text
-              color="blueGray.700"
-              fontWeight="400"
-              fontSize={['0.875rem', '1.5rem']}
-              lineHeight={['1.31rem', '2.25rem']}
-              textAlign="justify"
-            >
-              A Europa é, por convenção, um dos seis continentes do mundo.
-              Compreendendo a península ocidental da Eurásia, a Europa
-              geralmente divide-se da Ásia a leste pela divisória de águas dos
-              montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a
-              sudeste
-            </Text>
-          </Flex>
-
-          <InfoBox />
-        </Flex>
+        <InfoBox />
 
         <Flex w="100%" mt={['2rem', '80px']}>
-          <Heading color="blueGray.700" fontWeight="500" fontSize="1.5rem">
+          <Heading
+            color="blueGray.700"
+            fontWeight="500"
+            fontSize={['1.5rem', '2.25rem']}
+          >
             Cidades + 100
           </Heading>
         </Flex>
@@ -60,6 +41,7 @@ export default function Continent(): JSX.Element {
           w="100%"
           direction="column"
           align={['center', 'center', 'normal']}
+          mt="20px"
         >
           <SimpleGrid spacingX="45px" minChildWidth="220px">
             <CityCard
@@ -69,29 +51,29 @@ export default function Continent(): JSX.Element {
               flagSrc="/cityCard/ukFlag.png"
             />
             <CityCard
-              postImageSrc="/cityCard/london.png"
-              city="Londres"
-              country="Reino Unido"
-              flagSrc="/cityCard/ukFlag.png"
+              postImageSrc="/cityCard/paris.png"
+              city="Paris"
+              country="França"
+              flagSrc="/cityCard/franceFlag.png"
             />
             <CityCard
-              postImageSrc="/cityCard/london.png"
-              city="Londres"
-              country="Reino Unido"
-              flagSrc="/cityCard/ukFlag.png"
+              postImageSrc="/cityCard/rome.png"
+              city="Roma"
+              country="Itália"
+              flagSrc="/cityCard/italyFlag.png"
             />
             <CityCard
-              postImageSrc="/cityCard/london.png"
-              city="Londres"
-              country="Reino Unido"
-              flagSrc="/cityCard/ukFlag.png"
+              postImageSrc="/cityCard/prague.png"
+              city="Praga"
+              country="República Tcheca"
+              flagSrc="/cityCard/czechRepublicFlag.png"
             />
 
             <CityCard
-              postImageSrc="/cityCard/london.png"
-              city="Londres"
-              country="Reino Unido"
-              flagSrc="/cityCard/ukFlag.png"
+              postImageSrc="/cityCard/amsterdam.png"
+              city="Amsterdã"
+              country="Holanda"
+              flagSrc="/cityCard/hollandFlag.png"
             />
           </SimpleGrid>
         </Flex>

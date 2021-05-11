@@ -37,7 +37,7 @@ export function InfoContent({
             <Image
               ml="0.313rem"
               display="inline-block"
-              h="10px"
+              h="0.62rem"
               src="/infoIcon.svg"
             />
           </Tooltip>

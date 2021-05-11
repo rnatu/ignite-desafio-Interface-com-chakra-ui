@@ -11,7 +11,7 @@ export function Header(): JSX.Element {
       justify="center"
       align="center"
       width="100vw"
-      h={['50px', '100px']}
+      h={['3.12rem', '6.25rem']}
       p="1rem"
     >
       <Grid maxWidth="1160px" templateColumns="repeat(3, 1fr)" width="100%">
@@ -19,7 +19,7 @@ export function Header(): JSX.Element {
           {router.asPath !== '/' && (
             <Link as="a" href="/">
               <Image
-                h={['16px', '42px']}
+                h={['1rem', '2.62rem']}
                 src="/returnArrow.svg"
                 alt="botão de voltar"
                 justifySelf="center"
@@ -29,7 +29,7 @@ export function Header(): JSX.Element {
         </GridItem>
         <GridItem justifySelf="center" alignSelf="center">
           <Image
-            w={['81px', '184px']}
+            w={['5.06rem', '11.5rem']}
             src="/logo.svg"
             alt="Um avião voando sobre o nome da marca world trip"
           />

@@ -26,7 +26,7 @@ export function SwiperContent({
       >
         <Box _hover={{ opacity: '0.7', transition: '.3s' }}>
           <Heading
-            mt={['100px', '200px']}
+            mt={['6.25rem', '12.5rem']}
             color="gray.50"
             fontSize={['1.5rem', '2rem', '3rem']}
             fontWeight="700"
@@ -35,7 +35,7 @@ export function SwiperContent({
           </Heading>
           <Text
             color="gray.100"
-            mt={['5px', '1']}
+            mt={['0.31rem', '1']}
             fontSize={['0.875rem', '1.3rem', '1.5rem']}
             fontWeight="700"
           >
