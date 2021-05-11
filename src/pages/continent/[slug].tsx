@@ -1,5 +1,6 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
 import Head from 'next/head';
+import { CityCard } from '../../components/CityCard';
 import { ContinentBanner } from '../../components/ContinentBanner';
 
 import { Header } from '../../components/Header';
@@ -17,7 +18,12 @@ export default function Continent(): JSX.Element {
 
       <ContinentBanner>Europa</ContinentBanner>
 
-      <Flex as="main" maxWidth="1160px" m={['1rem', '1rem', '1rem', 'auto']}>
+      <Flex
+        as="main"
+        direction="column"
+        maxWidth="1160px"
+        mx={['1rem', '1rem', '1rem', 'auto']}
+      >
         <Flex
           mt={['1.5rem', '5rem']}
           direction={['column', 'column', 'row']}
@@ -42,6 +48,52 @@ export default function Continent(): JSX.Element {
           </Flex>
 
           <InfoBox />
+        </Flex>
+
+        <Flex w="100%" mt={['2rem', '80px']}>
+          <Heading color="blueGray.700" fontWeight="500" fontSize="1.5rem">
+            Cidades + 100
+          </Heading>
+        </Flex>
+
+        <Flex
+          w="100%"
+          direction="column"
+          align={['center', 'center', 'normal']}
+        >
+          <SimpleGrid spacingX="45px" minChildWidth="220px">
+            <CityCard
+              postImageSrc="/cityCard/london.png"
+              city="Londres"
+              country="Reino Unido"
+              flagSrc="/cityCard/ukFlag.png"
+            />
+            <CityCard
+              postImageSrc="/cityCard/london.png"
+              city="Londres"
+              country="Reino Unido"
+              flagSrc="/cityCard/ukFlag.png"
+            />
+            <CityCard
+              postImageSrc="/cityCard/london.png"
+              city="Londres"
+              country="Reino Unido"
+              flagSrc="/cityCard/ukFlag.png"
+            />
+            <CityCard
+              postImageSrc="/cityCard/london.png"
+              city="Londres"
+              country="Reino Unido"
+              flagSrc="/cityCard/ukFlag.png"
+            />
+
+            <CityCard
+              postImageSrc="/cityCard/london.png"
+              city="Londres"
+              country="Reino Unido"
+              flagSrc="/cityCard/ukFlag.png"
+            />
+          </SimpleGrid>
         </Flex>
       </Flex>
     </>
